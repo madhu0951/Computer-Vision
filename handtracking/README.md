@@ -1,2 +1,9 @@
+HAND LANDMARKS
+The below image shows 21 landmarks with their names 
+![hand_landmarks](https://user-images.githubusercontent.com/89246442/147646163-074489bc-f112-4f87-aa52-b6e32c75bb30.png)
 
-!https://www.google.com/url?sa=i&url=https%3A%2F%2Fgoogle.github.io%2Fmediapipe%2Fsolutions%2Fhands.html&psig=AOvVaw3F_-pObZO5YeGH1o2DfAbA&ust=1640855534493000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjw_LHViPUCFQAAAAAdAAAAABAD
+
+OUTPUT:
+![hand_tracking_output](https://user-images.githubusercontent.com/89246442/147646476-153d3d81-dc7c-442b-ac2d-e3f855a27a33.png)
+
+In the about image we can clearly see that it can detect all the Hand landmarks and also can highlight the required point with clear circle
