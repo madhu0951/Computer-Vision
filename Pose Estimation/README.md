@@ -8,3 +8,8 @@ INPUT VIDEO
 
 https://user-images.githubusercontent.com/89246442/147737262-4a7a2b57-9429-4a96-a3c0-581e55f7f043.mp4
 
+
+OUTPUT:
+
+
+![image](https://user-images.githubusercontent.com/89246442/147750864-4b146318-6dcf-4540-b563-6f0d09a8ee5e.png)
