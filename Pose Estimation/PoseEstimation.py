@@ -7,6 +7,12 @@ pose=mpPose.Pose()
 
 cap=cv2.VideoCapture('dancing1 video.mp4')
 
+frame_width=int(cap.get(3))
+frame_height=int(cap.get(4))
+frame_size=(frame_width,frame_height)
+fps=20
+output=cv2.VideoWriter('output_poseEstimation.avi',cv2.VideoWriter_fourcc('M','J','P','G'),20,frame_size)
+
 pTime=0
 while True:
     success,img=cap.read()
@@ -29,6 +35,8 @@ while True:
     pTime = cTime
 
     cv2.putText(img, str(int(fps)), (70, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
-
+    
+    output.write(img)
     cv2.imshow('image', img)
     cv2.waitKey(1)
+output.release()
