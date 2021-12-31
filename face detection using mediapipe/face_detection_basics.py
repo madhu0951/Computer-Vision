@@ -5,6 +5,12 @@ import time
 cap=cv2.VideoCapture("D:\CVAIproject\kidsplaying.webm")
 pTime=0
 
+frame_width=int(cap.get(3))
+frame_height=int(cap.get(4))
+frame_size=(frame_width,frame_height)
+fps=20
+output=cv2.VideoWriter('outputx.avi',cv2.VideoWriter_fourcc('M','J','P','G'),20,frame_size)
+
 mpFaceDetection=mp.solutions.face_detection
 mpDraw=mp.solutions.drawing_utils
 faceDetection=mpFaceDetection.FaceDetection()
@@ -39,5 +45,7 @@ while True:
     pTime=cTime
     cv2.putText(img,f'FPS: {int(fps)}', (20,70),cv2.FONT_HERSHEY_PLAIN,
                 3,(0,255,0),2)
+    output.write(img)
     cv2.imshow('Image', img)
     cv2.waitKey(10)
+ output.release()
